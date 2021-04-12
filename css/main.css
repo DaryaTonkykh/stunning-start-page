@@ -118,7 +118,7 @@ h3 {
   font-family: "PT Sams Narrow", sans-serif;
   text-align: center;
   z-index: 1;
-  background-color: rgba (0, 0, 0, .1)
+  background-color: rgba(0, 0, 0, .1);
 }
 
 section li > img {
@@ -126,4 +126,22 @@ section li > img {
   grid-row: 1 / -1;
 }
 
-section
+section div {
+  grid-area: top;
+  background-color: rgba(0, 0, 0, .1);
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-radius: 1em 0 0 1em;
+  justify-self: end;
+  padding: 0 .5em;
+  margin: .5em 0 0;
+  z-index: 1;
+}
+
+section div img {
+  width: 1em;
+  height: 1em;
+  margin-right: .5em;
+}
