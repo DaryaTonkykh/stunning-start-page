@@ -138,6 +138,7 @@ section div {
   padding: 0 .5em;
   margin: .5em 0 0;
   z-index: 1;
+  font-style: italic;
 }
 
 div strong {
