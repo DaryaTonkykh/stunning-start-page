@@ -94,4 +94,36 @@ section ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
+
+section ul li {
+  background-color: #ccc;
+  border: 2px solid #afafaf;
+  border-radius: 6px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "top"
+  "middle"
+  "bottom";
+}
+
+h3 {
+  grid-area: bottom;
+  font-family: "PT Sams Narrow", sans-serif;
+  text-align: center;
+  z-index: 1;
+  background-color: rgba (0, 0, 0, .1)
+}
+
+section li > img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+section
